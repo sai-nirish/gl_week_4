@@ -28,6 +28,7 @@ public class Writer {
         try {
             writer.write(transaction);
             writer.write("\n");
+            writer.flush();
         } catch (Exception e) {
             System.out.println("unable to write to file");
         }
